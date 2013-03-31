@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional
 class TaskService {
     final static int MAX_THREADS = 4;
 
-    boolean transactional = true;
+    boolean transactional = false;
 
     private ExecutorService serv = Executors.newFixedThreadPool(MAX_THREADS)
 
@@ -22,7 +22,6 @@ class TaskService {
             scheduleJob(run)
         }
         catch(ClassNotFoundException e) {
-            removeTask(t)
             throw new ClassNotFoundException()
         }
     }

@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
     <file path="/TaskController.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364739822491" ignored="false" />
-    <file path="/TaskService.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364743373634" ignored="false" />
+    <file path="/TaskService.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364745527627" ignored="false" />
     <file path="/resources.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364649387639" ignored="false" />
     <file path="/Fib.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364652530967" ignored="false" />
     <file path="/CountToN.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364652672524" ignored="false" />
@@ -108,7 +108,7 @@
       <file leaf-file-name="TaskService.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/services/codilime/TaskService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="47" selection-start="399" selection-end="399" vertical-scroll-proportion="0.23131673">
+            <state line="9" column="33" selection-start="257" selection-end="257" vertical-scroll-proportion="0.12455516">
               <folding />
             </state>
           </provider>
@@ -142,10 +142,10 @@
         <option value="$PROJECT_DIR$/test/unit/codilime/TaskSpec.groovy" />
         <option value="$PROJECT_DIR$/test/unit/codilime/TaskControllerSpec.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/codilime/TaskController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/codilime/TaskService.groovy" />
         <option value="$PROJECT_DIR$/test/unit/codilime/TaskServiceSpec.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/codilime/TaskService.groovy" />
       </list>
     </option>
   </component>
@@ -585,7 +585,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/codilime/TaskService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="47" selection-start="399" selection-end="399" vertical-scroll-proportion="0.23131673">
+        <state line="9" column="33" selection-start="257" selection-end="257" vertical-scroll-proportion="0.12455516">
           <folding />
         </state>
       </provider>
