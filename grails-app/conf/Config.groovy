@@ -11,7 +11,11 @@
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
 // }
 
-grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
+grails.project.groupId = "tasks" // change this to alter the default package name and Maven publishing destination
+
+grails.app.context="/tasks"
+
+
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
 grails.mime.use.accept.header = false
 grails.mime.types = [
@@ -60,8 +64,6 @@ service;
 
 // configure auto-caching of queries by default (if false you can cache individual queries with 'cache: true')
 grails.hibernate.cache.queries = false
-
-grails.serverURL = "http://localhost:8330/tasks"
 
 environments {
     development {

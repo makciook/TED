@@ -1,6 +1,5 @@
 package codilime
 
-
 import grails.test.mixin.TestFor
 import grails.test.mixin.Mock
 import spock.lang.Specification
@@ -8,29 +7,15 @@ import spock.lang.Unroll
 
 import javax.servlet.http.HttpServletResponse
 
-
-/**
- * Created with IntelliJ IDEA.
- * User: maciek
- * Date: 30.03.13
- * Time: 15:38
- * To change this template use File | Settings | File Templates.
- */
 @TestFor(TaskController)
 @Mock(Task)
 class TaskControllerSpec extends Specification {
-
-    def "mocktest only"() {
-        expect:
-        name.size() == size
-
-        where:
-        name << ["Maciek", "Marek", "Bartek", "Ewa"]
-        //size << [6, 5, 10, 10]
-        size << [6,5,6,3]
+    def setup() {
+        mockController(TaskController)
+        mockFor(Task)
     }
 
-    def "correct response scheduled"() {
+    def "correct response of count-scheduled"() {
         when:
         controller.countScheduled()
 
@@ -39,7 +24,7 @@ class TaskControllerSpec extends Specification {
         controller.response.getStatus() != HttpServletResponse.SC_BAD_REQUEST
     }
 
-    def "correct response running"() {
+    def "correct response of count-running"() {
         when:
         controller.countRunning()
 
@@ -48,9 +33,10 @@ class TaskControllerSpec extends Specification {
         controller.response.getStatus() != HttpServletResponse.SC_BAD_REQUEST
     }
 
-    /*def "correct response schedule"() {
+    def "correct response of schedule for existing class"() {
         setup:
-        mockController(TaskController)
+        def taskService = new TaskService()
+        controller.taskService = taskService
         controller.metaClass.message = {args -> "mockMessage"}
         controller.params.class = "codilime.ted.example.Itemize"
 
@@ -58,19 +44,21 @@ class TaskControllerSpec extends Specification {
         controller.schedule()
 
         then:
-        controller.response.getStatus() == HttpServletResponse.SC_OK
-        controller.response.getStatus() == HttpServletResponse.SC_ACCEPTED
-        controller.countRunning() == 1
-    }         */
-
-    def "correct count running tasks"() {
-        given:
-        (0..100).each { i-> new Task(state: i%2, m_date: new Date().toString(), classname: "Test" ) }
-        controller.countRunning()
-
-        expect:
-        controller.response.text.equals((new Integer(50).toString()))
+        controller.response.getStatus() == HttpServletResponse.SC_OK || controller.response.getStatus() == HttpServletResponse.SC_ACCEPTED
     }
 
+    def "correct response of schedule for wrong params"() {
+        setup:
+        //mockController(TaskController)
+        def taskService = new TaskService()
+        controller.taskService = taskService
+        controller.metaClass.message = {args -> "mockMessage"}
+        controller.params.cl = "codilime.ted.example.Itemize"
 
+        when:
+        controller.schedule()
+
+        then:
+        controller.response.getStatus() == HttpServletResponse.SC_BAD_REQUEST
+    }
 }

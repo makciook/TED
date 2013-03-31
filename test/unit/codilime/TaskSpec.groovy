@@ -5,23 +5,17 @@ import grails.test.mixin.TestFor
 import spock.lang.Specification
 import spock.lang.Unroll
 
-/**
- * Created with IntelliJ IDEA.
- * User: maciek
- * Date: 30.03.13
- * Time: 16:06
- * To change this template use File | Settings | File Templates.
- */
-
 @TestFor(Task)
 @Mock(Task)
 class TaskSpec extends Specification {
-    def setup() {
-        mockForConstraintsTests(Task, [new Task()])
-    }
+
+
 
     @Unroll("test task all constraints #field initialized with error value: #error")
     def "test tasks all constraints"() {
+        setup:
+        mockForConstraintsTests(Task, [new Task()])
+
         when:
         def obj = new Task("$field": val)
         obj.validate()
@@ -37,7 +31,23 @@ class TaskSpec extends Specification {
         'max'       | 'state' | 2
     }
 
+    def "correct count running tasks"() {
+        setup:
+        //mockForConstraintsTests(Task)
+        mockDomain(Task, [(1..100).each { new Task(state: 1, m_date: new Date().toString(), classname: "ll$it").save() }])
 
+        expect:
+        Task.countByState(1) == 100
+    }
+
+    def "correct count scheduled tasks"() {
+        setup:
+        //mockForConstraintsTests(Task)
+        mockDomain(Task, [(1..100).each { new Task(state: 0, m_date: new Date().toString(), classname: "ll$it").save() }])
+
+        expect:
+        Task.countByState(0) == 100
+    }
 
     void validateConstraints(obj, field, error) {
         def validated = obj.validate()

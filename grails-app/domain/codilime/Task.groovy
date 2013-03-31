@@ -1,8 +1,7 @@
 package codilime
 
 class Task {
-
-    int state;	// 0 - scheduled, 1 - running, 2 - completed
+    int state;	// 0 - scheduled, 1 - running
     String classname;
     String m_date;
 

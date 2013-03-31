@@ -5,21 +5,23 @@
     <ignored path="tasks.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/TaskController.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364676678438" ignored="false" />
-    <file path="/TaskService.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364677116002" ignored="false" />
+    <file path="/TaskController.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364739822491" ignored="false" />
+    <file path="/TaskService.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364743373634" ignored="false" />
     <file path="/resources.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364649387639" ignored="false" />
     <file path="/Fib.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364652530967" ignored="false" />
     <file path="/CountToN.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364652672524" ignored="false" />
     <file path="/Itemize.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364653156450" ignored="false" />
     <file path="/Config.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364653832097" ignored="false" />
-    <file path="/TaskControllerSpec.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364674370941" ignored="false" />
-    <file path="/TaskSpec.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364671960727" ignored="false" />
-    <file path="$PROJECT_DIR$/target/test-reports/TESTS-TestSuites.xml" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364673317615" ignored="false" />
-    <file path="$PROJECT_DIR$/target/stacktrace.log" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364677235989" ignored="false" />
-    <file path="$PROJECT_DIR$/target/test-reports/TEST-unit-spock-codilime.TaskControllerSpec.xml" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364673312436" ignored="false" />
+    <file path="/TaskControllerSpec.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364742533442" ignored="false" />
+    <file path="/TaskSpec.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364741621523" ignored="false" />
+    <file path="$PROJECT_DIR$/target/test-reports/TESTS-TestSuites.xml" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364734911501" ignored="false" />
+    <file path="$PROJECT_DIR$/target/stacktrace.log" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364733737388" ignored="false" />
+    <file path="$PROJECT_DIR$/target/test-reports/TEST-unit-spock-codilime.TaskControllerSpec.xml" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364742147319" ignored="false" />
     <file path="/BuildConfig.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364658316034" ignored="false" />
-    <file path="$PROJECT_DIR$/target/test-reports/TEST-unit-spock-codilime.TaskSpec.xml" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364673312436" ignored="false" />
-    <file path="/TaskServiceSpec.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364727361153" ignored="false" />
+    <file path="$PROJECT_DIR$/target/test-reports/TEST-unit-spock-codilime.TaskSpec.xml" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364734911501" ignored="false" />
+    <file path="/TaskServiceSpec.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364742894623" ignored="false" />
+    <file path="$PROJECT_DIR$/target/test-reports/TEST-unit-spock-codilime.TaskServiceSpec.xml" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364734911501" ignored="false" />
+    <file path="/Task.groovy" changelist="77db6c8c-e6e5-437a-bf9a-a8776adc09f0" time="1364739690388" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,11 @@
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
@@ -78,37 +85,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Fib.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/groovy/codilime/ted/example/Fib.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskControllerSpec.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/codilime/TaskControllerSpec.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="10" selection-start="202" selection-end="202" vertical-scroll-proportion="-0.65217394">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskService.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/codilime/TaskService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="4" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskServiceSpec.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TaskServiceSpec.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/codilime/TaskServiceSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="16" selection-start="266" selection-end="266" vertical-scroll-proportion="0.32315978">
+            <state line="22" column="48" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#18#49#0" expanded="true" />
               </folding>
@@ -116,44 +96,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/codilime/TaskController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="9" selection-start="1182" selection-end="1950" vertical-scroll-proportion="-31.173914">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="10" selection-start="2512" selection-end="2512" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TaskSpec.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/codilime/TaskSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="18" selection-end="80" vertical-scroll-proportion="-1.2173913">
-              <folding>
-                <element signature="e#18#47#0" expanded="true" />
-              </folding>
+            <state line="20" column="18" selection-start="476" selection-end="476" vertical-scroll-proportion="-11.086957">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/codilime/Task.groovy">
+      <file leaf-file-name="TaskService.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/codilime/TaskService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="36" selection-start="354" selection-end="354" vertical-scroll-proportion="-5.3125">
+            <state line="15" column="47" selection-start="399" selection-end="399" vertical-scroll-proportion="0.23131673">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="TaskController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/codilime/TaskController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="5" selection-start="1702" selection-end="1702" vertical-scroll-proportion="-30.434782">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -167,19 +133,19 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/domain/codilime/Task.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/codilime/ted/example/Fib.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/codilime/ted/example/CountToN.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/codilime/ted/example/Itemize.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/codilime/Task.groovy" />
         <option value="$PROJECT_DIR$/test/unit/codilime/TaskSpec.groovy" />
         <option value="$PROJECT_DIR$/test/unit/codilime/TaskControllerSpec.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/codilime/TaskService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/codilime/TaskController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/codilime/TaskService.groovy" />
         <option value="$PROJECT_DIR$/test/unit/codilime/TaskServiceSpec.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
       </list>
     </option>
   </component>
@@ -422,7 +388,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -438,7 +404,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1505508" sideWeight="0.6708861" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -507,46 +473,77 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/groovy/codilime/ted/example/CountToN.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="26" selection-start="565" selection-end="565" vertical-scroll-proportion="0.4379562" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/codilime/ted/example/Fib.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="721" column="0" selection-start="26865" selection-end="26865" vertical-scroll-proportion="0.33213645" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.grails/2.2.1/projects/CODILIME/plugins/tomcat-2.2.1/scripts/Tomcat.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.grails/2.2.1/projects/CODILIME/plugins/tomcat-2.2.1/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.grails/2.2.1/projects/CODILIME/plugins/tomcat-2.2.1/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../GROOVY/tasks/grails-app/conf/UrlMappings.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="8" selection-start="177" selection-end="358" vertical-scroll-proportion="0.20072992" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+    <entry file="file://$PROJECT_DIR$/src/groovy/codilime/ted/example/Fib.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="48" selection-start="2765" selection-end="2765" vertical-scroll-proportion="0.0">
+        <state line="7" column="6" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/codilime/ted/example/CountToN.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="39" selection-start="412" selection-end="439" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/codilime/TaskControllerSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="968" selection-end="968" vertical-scroll-proportion="-12.782609">
+          <folding>
+            <element signature="e#18#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/codilime/Task.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="32" selection-start="280" selection-end="297" vertical-scroll-proportion="-4.6875">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/codilime/TaskController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="5" selection-start="1702" selection-end="1702" vertical-scroll-proportion="-30.434782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/codilime/TaskServiceSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="48" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#18#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/codilime/TaskSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="18" selection-start="476" selection-end="476" vertical-scroll-proportion="-11.086957">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -558,59 +555,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/spring/resources.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="2" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/ApplicationResources.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="10" selection-start="2512" selection-end="2512" vertical-scroll-proportion="0.0">
+        <state line="9" column="45" selection-start="386" selection-end="393" vertical-scroll-proportion="-5.4">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/codilime/TaskController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="9" selection-start="1182" selection-end="1950" vertical-scroll-proportion="-31.173914">
+        <state line="15" column="26" selection-start="815" selection-end="815" vertical-scroll-proportion="0.2669039">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/codilime/Task.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="354" selection-end="354" vertical-scroll-proportion="-5.3125">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/codilime/TaskService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+        <state line="15" column="47" selection-start="399" selection-end="399" vertical-scroll-proportion="0.23131673">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/codilime/TaskSpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="18" selection-end="80" vertical-scroll-proportion="-1.2173913">
-          <folding>
-            <element signature="e#18#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/codilime/TaskControllerSpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="10" selection-start="202" selection-end="202" vertical-scroll-proportion="-0.65217394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/codilime/TaskServiceSpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="266" selection-end="266" vertical-scroll-proportion="0.32315978">
-          <folding>
-            <element signature="e#18#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
