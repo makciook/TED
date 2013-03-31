@@ -2,7 +2,7 @@ TED
 ===
 
 TED (<i>Task executing distributor</i>) to system, który wykonuje zadania. Szablonem zadania jest klasa implementująca interfejs java.lang.Runnable.
-Napisany w Groovy on Grails z wykorzystaniem testów Spock stanowi efektywną implementacje <i>Schedulera</i>
+Napisany w Groovy on Grails z wykorzystaniem testów Spock stanowi efektywną implementacje <i>Schedulera</i>.
 
 1. Budowanie i uruchomienie
 ---
