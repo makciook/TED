@@ -39,7 +39,7 @@ Dostępne są 3 klasy testowe:
 * <code>codilime.ted.example.Itemize</code>
     Klasa wypisująca w konsoli 5 jeżyków programowania w odstępach 2-sekundowych.
 * <code>codilime.ted.example.Fib</code>
-    Stworzona do testowania wydajności serwera i ustawień wielowątkowości. Oblicza algorytmem rekurencyjnym fib(40), co zajmuje jej od 1 do 2 minut.
+    Stworzona do testowania wydajności serwera i ustawień wielowątkowości. Oblicza algorytmem rekurencyjnym fib(40), wykonanie zajmuje jej co najmniej kilkadziesiat sekund.
 * <code>codilime.ted.example.CountToN</code>
     Prosta klasa o długim czasie wykonania. Liczy od 0 do 19 z 2-sekkundowymi przerwami
 
