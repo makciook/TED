@@ -7,13 +7,13 @@ Task executing distributor to system, który wykonuje zadania. Szablonem zadania
 ---
 
 Uruchomienie serwera nastepuje po wydaniu komendy:
-  * grails run-app
+    grails run-app
 
 Mozliwe jest takze wykonanie zaimplementowanych testow spock:
-  * grails test-app :spock
+    grails test-app :spock
   
 Serwer tomcat zostaje uruchomiony lokalnie na porcie 8330. Dostep pod adresem:
-  * http://localhost:8330/tasks/...
+    http://localhost:8330/tasks/...
 
 2. Interfejs
 ---
