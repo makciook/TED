@@ -2,6 +2,7 @@ TED
 ===
 
 TED (<i>Task executing distributor</i>) to system, który wykonuje zadania. Szablonem zadania jest klasa implementująca interfejs java.lang.Runnable.
+Napisany w Groovy on Grails z wykorzystaniem testow Spock stanowi efektywna implemetacje <i>Schedulera</i>
 
 1. Budowanie i uruchomienie
 ---
@@ -9,7 +10,10 @@ Uruchomienie serwera nastepuje po wydaniu komendy:
 <code>grails run-app</code>
 
 Serwer tomcat zostaje uruchomiony lokalnie na porcie 8330. Staje sie dostepny pod adresem:
-<code>http://localhost:8330</code>
+<pre>http://localhost:8330</pre>
+
+lub poprzez <a href="http://www.gnu.org/software/wget/">wget</a>, np:
+<pre>wget http://localhost:8330/tasks/count-scheduled</pre>
 
 1b. (Konfiguracja)
 ---
