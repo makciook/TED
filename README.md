@@ -2,14 +2,14 @@ TED
 ===
 
 TED (<i>Task executing distributor</i>) to system, który wykonuje zadania. Szablonem zadania jest klasa implementująca interfejs java.lang.Runnable.
-Napisany w Groovy on Grails z wykorzystaniem testow Spock stanowi efektywna implemetacje <i>Schedulera</i>
+Napisany w Groovy on Grails z wykorzystaniem testów Spock stanowi efektywną implementacje <i>Schedulera</i>
 
 1. Budowanie i uruchomienie
 ---
-Uruchomienie serwera nastepuje po wydaniu komendy:
+Uruchomienie serwera następuje po wydaniu komendy:
 <code>grails run-app</code>
 
-Serwer tomcat zostaje uruchomiony lokalnie na porcie 8330. Staje sie dostepny pod adresem:
+Serwer tomcat zostaje uruchomiony lokalnie na porcie 8330. Staje się dostępny pod adresem:
 <pre>http://localhost:8330</pre>
 
 lub poprzez <a href="http://www.gnu.org/software/wget/">wget</a>, np:
@@ -17,42 +17,37 @@ lub poprzez <a href="http://www.gnu.org/software/wget/">wget</a>, np:
 
 1b. (Konfiguracja)
 ---
-Domyslnie serwer przeznacza 4 watki na wykonywanie nowych zadan. Pozostale zostaja zakolejkowane i wykonane zaraz po zakonczeniu poprzedzajacych.
-Parametr okreslajacy maksymalna ilosc zadan to <code>MAX_THREADS</code> w klasie <code>TaskService.groovy</code>. Domyslnie jest on ustawiony 
-na wartosc 4, co jest wartoscia optymalna w przypadku uruchamiania zarowno zadan wymagajacych obliczeniowo, jak i tych prostych.
-W zaleznosci od przeznaczenia serwera, wartosc <code>MAX_THREADS</code> moze zostac modyfikowana.
+Domyślnie serwer przeznacza 4 wątki na wykonywanie nowych zadań. Pozostałe zostają zakolejkowane i wykonane zaraz po zakończeniu poprzedzających.
+Parametr określający maksymalna ilość zadań to <code>MAX_THREADS</code> w klasie <code>TaskService.groovy</code>. Domyślnie jest on ustawiony 
+na wartość 4, co jest wartością optymalna w przypadku uruchamiania zarówno zadań wymagających obliczeniowo, jak i tych prostych.
+W zależności od przeznaczenia serwera, wartość <code>MAX_THREADS</code> może zostać modyfikowana.
 
 2. Interfejs
 ---
-TED komunikuje sie ze swiatem poprzez interfejs webowy HTTP/JSON nasluchujacy na porcie 8330. Do wykonania mozliwe sa nastepujace zapytania HTTP:
-* <code>GET /tasks/schedule?class=fully.qualified.class.Name</code> - zleca zadanie, odpowiada pusta trescia i statusami:
+TED komunikuje się ze światem poprzez interfejs webowy HTTP/JSON nasłuchujący na porcie 8330. Do wykonania możliwe są następujące zapytania HTTP:
+* <code>GET /tasks/schedule?class=fully.qualified.class.Name</code> - zleca zadanie, odpowiada pustą treścią i statusami:
   - 200 (success), w przypadku zlecenia zadania
   - 202 (accepted), w przypadku nieudanej próby zlecenia zadania (brak klasy itp)
-  - 400 (bad request), gdy popelniono blad skladniowy w zapytaniu
-  Po wykonaniu komenty tworzone jest nowe zadanie. W przypadku, gdy 
-* <code>GET /tasks/count-scheduled</code> - zwraca ilosc zadan w kolejce, odpowiada statusem 200
-* <code>GET /tasks/count-running</code> - zwraca ilosc uruchomionych zadan, odpowiada statusem 200
+  - 400 (bad request), gdy popełniono bląd składniowy w zapytaniu
+* <code>GET /tasks/count-scheduled</code> - zwraca ilość zadań w kolejce, odpowiada statusem 200
+* <code>GET /tasks/count-running</code> - zwraca ilość uruchomionych zadań, odpowiada statusem 200
 
 
-3. Przyklady
+3. Przykłady
 ---
-Dostepne sa 3 klasy testowe:
+Dostępne są 3 klasy testowe:
 * <code>codilime.ted.example.Itemize</code>
-    Klasa wypisujaca w konsoli 5 jezykow programowania w odstepach 2-sekundowych.
+    Klasa wypisująca w konsoli 5 jeżyków programowania w odstępach 2-sekundowych.
 * <code>codilime.ted.example.Fib</code>
-    Stworzona do testowania wydajnosci serwera i ustawien wielowatkowosci. Oblicza algorytmem rekurencyjnym fib(40), co zajmuje jej od 1 do 2 minut.
+    Stworzona do testowania wydajności serwera i ustawień wielowątkowości. Oblicza algorytmem rekurencyjnym fib(40), co zajmuje jej od 1 do 2 minut.
 * <code>codilime.ted.example.CountToN</code>
-    Prosta klasa o dlugim czasie wykonania. Liczy od 0 do 19 z 2-sekkundowymi przerwami
+    Prosta klasa o długim czasie wykonania. Liczy od 0 do 19 z 2-sekkundowymi przerwami
 
 
 4. Testy
 ---
-Zaimplementowane testy spock wykonywane sa komenda:
+Zaimplementowane testy spock wykonywane są komenda:
 <code>grails test-app :spock</code> i obejmuja:
 - Odpowiedz na <code>count-scheduled</code>
 - Odpowiedz na <code>count-running</code>
-- Sprawdzenie ograniczen dla statusu zadania (0 - scheduled, 1 - running)
-
-
-
-
+- Sprawdzenie ograniczeń dla statusu zadania (0 - scheduled, 1 - running)
