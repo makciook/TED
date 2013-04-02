@@ -7,7 +7,7 @@ TED (Task executing distributor) to system, który wykonuje zadania. Szablonem z
 ---
 Uruchomienie serwera nastepuje po wydaniu komendy: <code>gradle grails-run-app</code> (grails run-app)
 
-Wymagane jest posiadanie zainstalowanego srodowiska budowania Gradle w wersji 1.4 lub Grails 2.2.1.
+Wymagane jest posiadanie zainstalowanego srodowiska budowania Gradle w wersji 1.4 (Grails 2.2.1).
 
 Serwer tomcat zostaje uruchomiony lokalnie na porcie 8330. Staje sie dostepny pod adresem:
 <pre>http://localhost:8330</pre>
