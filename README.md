@@ -47,7 +47,11 @@ Dostępne są 3 klasy testowe:
 4. Testy
 ---
 Zaimplementowane testy spock wykonywane są komenda:
-<code>grails test-app :spock</code> i obejmuja:
-- Odpowiedz na <code>count-scheduled</code>
-- Odpowiedz na <code>count-running</code>
-- Sprawdzenie ograniczeń dla statusu zadania (0 - scheduled, 1 - running)
+<code>grails test-app :spock</code> (w szczególnosci: integration:spock lub unit:spock) i obejmuja:
+* odpowiedzi serwera na zapytanie <code>count-scheduled</code>, <code>count-running</code> oraz <code>schedule</code> dla istniejacej i nieistniejacej klasy.
+* przypadek braku parametru "class" dla zapytania <code>schedule</code>
+* klasa Task sprawdzana jest pod katem poprawnosci obliczania uruchomionych i zaplanowanych tasków
+* testowane sa także ograniczenia statusu (<code>state</code>) Task-ów
+* use case dodania 5 nowych Task-ów dla <code>MAX_THREADS = 4</code> - 4 uruchomione, 1 czeka
+* use case dodania kolejnego Task-u - 4 uruchomione, 2 czekaja
+
