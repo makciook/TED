@@ -28,7 +28,7 @@ TED komunikuje się ze światem poprzez interfejs webowy HTTP/JSON nasłuchując
 * <code>GET /tasks/schedule?class=fully.qualified.class.Name</code> - zleca zadanie, odpowiada pustą treścią i statusami:
   - 200 (success), w przypadku zlecenia zadania
   - 202 (accepted), w przypadku nieudanej próby zlecenia zadania (brak klasy itp)
-  - 400 (bad request), gdy popełniono bląd składniowy w zapytaniu
+  - 400 (bad request), gdy popełniono błąd składniowy w zapytaniu
 * <code>GET /tasks/count-scheduled</code> - zwraca ilość zadań w kolejce, odpowiada statusem 200
 * <code>GET /tasks/count-running</code> - zwraca ilość uruchomionych zadań, odpowiada statusem 200
 
@@ -39,19 +39,18 @@ Dostępne są 3 klasy testowe:
 * <code>codilime.ted.example.Itemize</code>
     Klasa wypisująca w konsoli 5 jeżyków programowania w odstępach 2-sekundowych.
 * <code>codilime.ted.example.Fib</code>
-    Stworzona do testowania wydajności serwera i ustawień wielowątkowości. Oblicza algorytmem rekurencyjnym fib(40), wykonanie zajmuje jej co najmniej kilkadziesiat sekund.
+    Stworzona do testowania wydajności serwera i ustawień wielowątkowości. Oblicza algorytmem rekurencyjnym fib(40), wykonanie zajmuje jej co najmniej kilkadziesiąt sekund.
 * <code>codilime.ted.example.CountToN</code>
     Prosta klasa o długim czasie wykonania. Liczy od 0 do 19 z 2-sekkundowymi przerwami
 
 
 4. Testy
 ---
-Zaimplementowane testy spock wykonywane są komenda:
-<code>grails test-app :spock</code> (w szczególnosci: integration:spock lub unit:spock) i obejmuja:
-* odpowiedzi serwera na zapytanie <code>count-scheduled</code>, <code>count-running</code> oraz <code>schedule</code> dla istniejacej i nieistniejacej klasy.
+Zaimplementowane testy spock wykonywane są komendą:
+<code>grails test-app :spock</code> (w szczególności: integration:spock lub unit:spock) i obejmują:
+* odpowiedzi serwera na zapytanie <code>count-scheduled</code>, <code>count-running</code> oraz <code>schedule</code> dla istniejącej i nieistniejącej klasy.
 * przypadek braku parametru "class" dla zapytania <code>schedule</code>
-* klasa Task sprawdzana jest pod katem poprawnosci obliczania uruchomionych i zaplanowanych tasków
-* testowane sa także ograniczenia statusu (<code>state</code>) Task-ów
+* klasa Task sprawdzana jest pod katem poprawności obliczania uruchomionych i zaplanowanych tasków
+* testowane są także ograniczenia statusu (<code>state</code>) Task-ów
 * use case dodania 5 nowych Task-ów dla <code>MAX_THREADS = 4</code> - 4 uruchomione, 1 czeka
 * use case dodania kolejnego Task-u - 4 uruchomione, 2 czekaja
-
