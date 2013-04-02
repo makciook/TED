@@ -9,11 +9,6 @@ import spock.lang.Unroll
 @Mock(Task)
 class TaskSpec extends Specification {
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 67efca988f7ea719026e18f433548cb8a6baa655
     @Unroll("test task all constraints #field initialized with error value: #error")
     def "test tasks all constraints"() {
         setup:
@@ -26,10 +21,6 @@ class TaskSpec extends Specification {
         then:
         if(error && error!='valid')
             error == obj.errors[field]
-<<<<<<< HEAD
-        //validateConstraints(obj,field,error)
-=======
->>>>>>> 67efca988f7ea719026e18f433548cb8a6baa655
 
         where:
         error       | field   | val
@@ -39,7 +30,6 @@ class TaskSpec extends Specification {
 
     def "correct count running tasks"() {
         setup:
-        //mockForConstraintsTests(Task)
         mockDomain(Task, [(1..100).each { new Task(state: 1, m_date: new Date().toString(), classname: "ll$it").save() }])
 
         expect:
@@ -54,18 +44,4 @@ class TaskSpec extends Specification {
         expect:
         Task.countByState(0) == 100
     }
-<<<<<<< HEAD
-
-    void validateConstraints(obj, field, error) {
-        def validated = obj.validate()
-        if (error && error != 'valid') {
-            assert !validated
-            assert obj.errors[field]
-            assert error == obj.errors[field]
-        } else {
-            assert !obj.errors[field]
-        }
-    }
-=======
->>>>>>> 67efca988f7ea719026e18f433548cb8a6baa655
 }

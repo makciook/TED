@@ -1,11 +1,8 @@
 package codilime
 
-<<<<<<< HEAD
-=======
 /**
  * Main class representing a single Task in grails db.
  */
->>>>>>> 67efca988f7ea719026e18f433548cb8a6baa655
 class Task {
     int state;	// 0 - scheduled, 1 - running
     String classname;

@@ -1,2 +1,0 @@
---Output from test task all constraints state initialized with error value: min--
---Output from test task all constraints state initialized with error value: max--

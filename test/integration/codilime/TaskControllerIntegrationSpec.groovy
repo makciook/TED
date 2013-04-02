@@ -1,14 +1,6 @@
 package codilime
 
 import grails.plugin.spock.ControllerSpec
-import grails.plugin.spock.IntegrationSpec
-import grails.test.mixin.TestFor
-import grails.test.mixin.Mock
-//import spock.lang.Specification
-import spock.lang.Specification;
-import spock.lang.Unroll
-
-import javax.servlet.http.HttpServletResponse
 
 
 class TaskControllerIntegrationSpec extends ControllerSpec  {
