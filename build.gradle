@@ -19,14 +19,7 @@ apply plugin: "grails"
 apply plugin: "idea"
 dependencies {
     ['dependencies', 'resources', 'core', 'hibernate', 'plugin-datasource', 'plugin-domain-class', 'plugin-tomcat', 'plugin-services'].each { plugin ->
-        compile "org.grails:grails-$plugin:2.1.0"
+        compile "org.grails:grails-$plugin:2.2.1"
     }
     bootstrap "org.codehaus.groovy:groovy-all:1.8.6"
-}
-
-GRAILS_TASK_PREFIX = "grails-"
-if (name.startsWith(GRAILS_TASK_PREFIX)) {
-    project.task(name, type: GrailsTask) {
-        command "${name - GRAILS_TASK_PREFIX}"
-    }
 }
