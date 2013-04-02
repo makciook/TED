@@ -17,7 +17,7 @@ lub poprzez wget, np:
 1b. (Konfiguracja)
 ---
 Domyslnie serwer przeznacza 4 watki na wykonywanie nowych zadan. Pozostale zostaja zakolejkowane i wykonane zaraz po zakonczeniu poprzedzajacych. Parametr okreslajacy maksymalna ilosc zadan to <code>MAX_THREADS</code>
-w klasie <code>TaskService.groovy</code>. Domyslnie jest on ustawiony na wartosc 4, co jest wartoscia optymalna w przypadku uruchamiania zarowno zadan wymagajacych obliczeniowo, jak i tych prostych. W zaleznosci od przeznaczenia serwera, wartosc <code>MAX_THREADS</code> moze zostac modyfikowana.
+w klasie <code>TaskService.groovy</code>. Domyslna wartosc jest wartoscia optymalna w przypadku uruchamiania zarowno zadan wymagajacych obliczeniowo, jak i tych prostych. W zaleznosci od przeznaczenia serwera, wartosc <code>MAX_THREADS</code> moze zostac modyfikowana.
 
 2. Interfejs
 ---
