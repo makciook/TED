@@ -12,6 +12,7 @@ class TaskServiceSpec extends Specification {
     def setup() {
         mockService(TaskService)
     }
+<<<<<<< HEAD
 
     def "correct single task submit"() {
         given:
@@ -39,4 +40,6 @@ class TaskServiceSpec extends Specification {
         Task.countRunningTasks() == TaskService.MAX_THREADS
         Task.countScheduledTasks() == 1
     }       */
+=======
+>>>>>>> 67efca988f7ea719026e18f433548cb8a6baa655
 }

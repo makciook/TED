@@ -4,6 +4,12 @@ import org.springframework.dao.DataIntegrityViolationException
 
 import javax.servlet.http.HttpServletResponse
 
+<<<<<<< HEAD
+=======
+/**
+ * MVC's controller class for Task, responding to http/json queries
+ */
+>>>>>>> 67efca988f7ea719026e18f433548cb8a6baa655
 class TaskController {
 
     TaskService taskService
@@ -23,6 +29,10 @@ class TaskController {
     def countScheduled() {
         render(status: 200, text: Task.countScheduledTasks())
         response.flushBuffer()
+<<<<<<< HEAD
+=======
+        return Task.countScheduledTasks()
+>>>>>>> 67efca988f7ea719026e18f433548cb8a6baa655
     }
 
     /**
@@ -32,6 +42,10 @@ class TaskController {
     def countRunning() {
         render(status: 200, text: Task.countRunningTasks())
         response.flushBuffer()
+<<<<<<< HEAD
+=======
+        return Task.countRunningTasks()
+>>>>>>> 67efca988f7ea719026e18f433548cb8a6baa655
     }
 
     /**
@@ -41,7 +55,11 @@ class TaskController {
     def schedule() {
         def className = params['class']
         if(className==null || className.toString().empty) {
+<<<<<<< HEAD
             render(status: 400)		// 400  bad req
+=======
+            render(status: 400)		        // 400  bad req
+>>>>>>> 67efca988f7ea719026e18f433548cb8a6baa655
         }
         else {
             try {

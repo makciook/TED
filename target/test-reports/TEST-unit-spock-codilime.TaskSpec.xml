@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="maciek-LAPTOP" name="codilime.TaskSpec" tests="2" time="0.375" timestamp="2013-03-30T20:13:42">
+  <properties />
+  <testcase classname="codilime.TaskSpec" name="test task all constraints state initialized with error value: min" time="0.271" />
+  <testcase classname="codilime.TaskSpec" name="test task all constraints state initialized with error value: max" time="0.062" />
+  <system-out><![CDATA[--Output from test task all constraints state initialized with error value: min--
+--Output from test task all constraints state initialized with error value: max--
+]]></system-out>
+  <system-err><![CDATA[--Output from test task all constraints state initialized with error value: min--
+--Output from test task all constraints state initialized with error value: max--
+]]></system-err>
+</testsuite>

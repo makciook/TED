@@ -1,0 +1,32 @@
+import org.grails.gradle.plugin.GrailsTask
+
+buildscript {
+        repositories {
+            mavenCentral()
+            mavenRepo name: "grails", url: 'http://repo.grails.org/grails/repo' 
+        }
+        dependencies {
+            classpath "org.grails:grails-gradle-plugin:1.1.1-SNAPSHOT"
+        }
+}
+repositories {
+    mavenCentral()
+    mavenRepo name: "grails", url: 'http://repo.grails.org/grails/repo' 
+}
+version = "1.0"
+grailsVersion = "2.2.1"
+apply plugin: "grails"
+apply plugin: "idea"
+dependencies {
+    ['dependencies', 'resources', 'core', 'hibernate', 'plugin-datasource', 'plugin-domain-class', 'plugin-tomcat', 'plugin-services'].each { plugin ->
+        compile "org.grails:grails-$plugin:2.1.0"
+    }
+    bootstrap "org.codehaus.groovy:groovy-all:1.8.6"
+}
+
+GRAILS_TASK_PREFIX = "grails-"
+if (name.startsWith(GRAILS_TASK_PREFIX)) {
+    project.task(name, type: GrailsTask) {
+        command "${name - GRAILS_TASK_PREFIX}"
+    }
+}
