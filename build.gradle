@@ -18,7 +18,7 @@ grailsVersion = "2.2.1"
 apply plugin: "grails"
 apply plugin: "idea"
 dependencies {
-    ['dependencies', 'resources', 'core', 'hibernate', 'plugin-datasource', 'plugin-domain-class', 'plugin-tomcat', 'plugin-services'].each { plugin ->
+    ['dependencies', 'resources', 'core', 'gorm', 'hibernate', 'plugin-datasource', 'plugin-domain-class', 'plugin-tomcat', 'plugin-services'].each { plugin ->
         compile "org.grails:grails-$plugin:2.2.1"
     }
     bootstrap "org.codehaus.groovy:groovy-all:1.8.6"
